@@ -1,0 +1,7 @@
+.header {
+	background-image: url("/public/images/backgroundImg.png");
+    object-fit: cover;
+	height: 100vh;
+	width: 100px;
+    z-index: 100;
+}

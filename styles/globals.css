@@ -1,0 +1,149 @@
+@import "./fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  .slider-thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d53f8c; /* Replace with your desired color */
+    cursor: grab;
+  }
+
+  .slider-thumb::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d53f8c; /* Replace with your desired color */
+    cursor: grab;
+  }
+
+  .slider-thumb:active::-webkit-slider-thumb,
+  .slider-thumb:active::-moz-range-thumb {
+    cursor: grabbing;
+  }
+  .slider-thumb {
+    background-color: #d53f8c; /* Replace with your desired color */
+    width: 20px;
+    height: 20px;
+  }
+
+  .custom-prev-arrow {
+    color: red;
+  }
+}
+
+/* paginationStyles.css */
+
+body {
+  position: relative;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+
+.pagination li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination a,
+.pagination span {
+  font-size: 16px;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 3px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #cb287f;
+  color: #fff;
+  border-color: #cb287f;
+}
+.pagination .active a {
+  background-color: #cb287f;
+  color: #fff;
+  border-color: #cb287f;
+}
+
+.pagination .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/*  */
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #cb287f;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: all;
+}
+
+.custom-radio:checked {
+  border-color: #cb287f;
+  background-color: #cb287f;
+}
+/* Emailjs form styling */
+/* CSS styles for form elements */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.swiper-pagination-bullet {
+  background-color: #2a19d4 !important; /* Customize the color as per your preference */
+  color: #2a19d4 !important;
+}
+
+/* Change the color of the default arrow */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #2a19d4; /* Change this to your desired color */
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}

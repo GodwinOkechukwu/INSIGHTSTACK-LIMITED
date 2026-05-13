@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    // "ignoreDeprecations": "6.0",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/hooks/useThemeSwitcher.tsx",
+    "src/components/CustomSwiper.tsx",
+    "src/components/config/features/paylaterModal2.ts",
+    "src/components/image-uploader/Uploader.jsx",
+    "src/components/config/features/api.ts",
+    "src/components/Reusables/PaginationComponent.jsx",
+    "src/components/invoice/InvoiceForDownload.tsx",
+    "src/app/order/[id]/page.tsx",
+    "src/components/pdf-uploader/PdfLoader.jsx",
+    "build/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

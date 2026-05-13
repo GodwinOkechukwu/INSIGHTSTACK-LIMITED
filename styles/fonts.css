@@ -1,0 +1,115 @@
+/* Plush-Trial font-face declarations */
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-Regular-BF654c40145b0dd.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-Italic-BF654c40145fe4f.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-Light-BF654c401444f88.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-LightItalic-BF654c40142d3df.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-Bold-BF654c40144cc74.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-BoldItalic-BF654c40144a11a.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-ExtraBold-BF654c4014409f5.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-ExtraBoldItalic-BF654c4013ace73.woff")
+    format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-Medium-BF654c401412ccd.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-MediumItalic-BF654c40146661a.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-ExtraLight-BF654c401453b5b.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-ExtraLightItalic-BF654c40142894b.woff")
+    format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-Black-BF654c4013ec70c.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plush Trial";
+  src: url("/fonts/Plush-Trial-BlackItalic-BF654c4014072a3.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
