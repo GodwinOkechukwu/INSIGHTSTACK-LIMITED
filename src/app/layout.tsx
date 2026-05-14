@@ -29,7 +29,7 @@
 // export const metadata: Metadata = {
 //   title: {
 //     default: title,
-//     template: `%s | ${SITE_NAME}`, // Allows sub-pages to have "Page Title | Warespire"
+//     template: `%s | ${SITE_NAME}`, // Allows sub-pages to have "Page Title | insightstack"
 //   },
 //   description: description,
 //   keywords: keywords,

@@ -3,12 +3,12 @@ import { queryOne } from "@src/lib/db";
 import { hashPassword } from "@src/lib/auth";
 import { T } from "@src/lib/tables";
 
-// GET /api/admin/bootstrap?secret=warespire-admin-2024
+// GET /api/admin/bootstrap?secret=insightstack-admin-2024
 // One-time endpoint to create the super admin account.
 // Safe to run multiple times — uses ON CONFLICT DO NOTHING.
 export async function GET(req: NextRequest) {
   const secret = req.nextUrl.searchParams.get("secret");
-  if (secret !== "warespire-admin-2024") {
+  if (secret !== "insightstack-admin-2024") {
     return NextResponse.json({ message: "Forbidden" }, { status: 403 });
   }
 

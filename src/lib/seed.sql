@@ -1,12 +1,12 @@
 -- ============================================================
--- warespire Seed Data — Computers, Hardware & Accessories
+-- insightstack Seed Data — Computers, Hardware & Accessories
 -- Run via: GET /api/db/seed?secret=seed-db-2024
 -- ============================================================
 
 -- ── Categories ───────────────────────────────────────────────
 
 -- 8 Main categories (no sub-categories)
-INSERT INTO warespire_categories (name, slug, description, parent_id, image_url, count) VALUES
+INSERT INTO insightstack_categories (name, slug, description, parent_id, image_url, count) VALUES
   ('Laptops & Notebooks',        'laptops-notebooks',        'Gaming laptops, business notebooks, ultrabooks and 2-in-1s', NULL, 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400', 0),
   ('Desktop Computers',          'desktop-computers',        'Pre-built gaming PCs, workstations and mini desktops', NULL, 'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400', 0),
   ('Processors & Motherboards',  'processors-motherboards',  'CPUs from Intel and AMD, plus compatible motherboards', NULL, 'https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=400', 0),
@@ -21,7 +21,7 @@ ON CONFLICT (slug) DO NOTHING;
 -- CATEGORY 1: LAPTOPS & NOTEBOOKS (12 products)
 -- ══════════════════════════════════════════════════════════════
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS ROG Zephyrus G16 Gaming Laptop',
   'asus-rog-zephyrus-g16',
@@ -31,7 +31,7 @@ VALUES (
   2150000, 2350000, 2150000, 'instock', 8, 42, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'MSI Titan 18 HX Gaming Laptop',
   'msi-titan-18-hx',
@@ -41,7 +41,7 @@ VALUES (
   4250000, 4650000, 4250000, 'instock', 3, 28, 4.95, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Lenovo Legion Pro 7i Gen 9',
   'lenovo-legion-pro-7i-gen9',
@@ -51,7 +51,7 @@ VALUES (
   2750000, 3000000, 2750000, 'instock', 6, 38, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Razer Blade 16 Gaming Laptop',
   'razer-blade-16',
@@ -61,7 +61,7 @@ VALUES (
   2450000, 2680000, 2450000, 'instock', 7, 45, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Dell XPS 15 9530 Creator Laptop',
   'dell-xps-15-9530',
@@ -71,7 +71,7 @@ VALUES (
   2050000, 2250000, 2050000, 'instock', 10, 52, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'HP Omen 16 Gaming Laptop',
   'hp-omen-16',
@@ -81,7 +81,7 @@ VALUES (
   1350000, 1480000, 1350000, 'instock', 15, 68, 4.70, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Lenovo ThinkPad P16s Gen 2 Workstation',
   'lenovo-thinkpad-p16s-gen2',
@@ -91,7 +91,7 @@ VALUES (
   1850000, 2050000, 1850000, 'instock', 8, 35, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS Vivobook Pro 16X OLED',
   'asus-vivobook-pro-16x-oled',
@@ -101,7 +101,7 @@ VALUES (
   1650000, 1820000, 1650000, 'instock', 12, 48, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Acer Swift X 14 Laptop',
   'acer-swift-x-14',
@@ -111,7 +111,7 @@ VALUES (
   1085000, 1200000, 1085000, 'instock', 18, 58, 4.70, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'MacBook Pro 16" M3 Max',
   'macbook-pro-16-m3-max',
@@ -121,7 +121,7 @@ VALUES (
   3850000, 4200000, 3850000, 'instock', 5, 32, 4.95, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Microsoft Surface Laptop 5 15"',
   'microsoft-surface-laptop-5-15',
@@ -131,7 +131,7 @@ VALUES (
   1485000, 1650000, 1485000, 'instock', 12, 42, 4.65, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'LG Gram 17 Ultra-Light Laptop',
   'lg-gram-17',
@@ -145,7 +145,7 @@ VALUES (
 -- CATEGORY 2: DESKTOP COMPUTERS (9 products)
 -- ══════════════════════════════════════════════════════════════
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Alienware Aurora R16 Gaming Desktop',
   'alienware-aurora-r16',
@@ -155,7 +155,7 @@ VALUES (
   3450000, 3780000, 3450000, 'instock', 5, 38, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'NZXT Player: Three Prime Gaming PC',
   'nzxt-player-three-prime',
@@ -165,7 +165,7 @@ VALUES (
   2650000, 2900000, 2650000, 'instock', 8, 48, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'CyberPowerPC Gamer Supreme Gaming Desktop',
   'cyberpower-gamer-supreme',
@@ -175,7 +175,7 @@ VALUES (
   1850000, 2050000, 1850000, 'instock', 12, 62, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'HP Z2 Tower G9 Workstation',
   'hp-z2-tower-g9',
@@ -185,7 +185,7 @@ VALUES (
   1485000, 1650000, 1485000, 'instock', 8, 32, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Dell OptiPlex 7010 Tower Desktop',
   'dell-optiplex-7010-tower',
@@ -195,7 +195,7 @@ VALUES (
   850000, 950000, 850000, 'instock', 25, 58, 4.70, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Apple Mac Studio M2 Ultra',
   'apple-mac-studio-m2-ultra',
@@ -205,7 +205,7 @@ VALUES (
   3650000, 4000000, 3650000, 'instock', 4, 28, 4.95, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Intel NUC 13 Extreme Gaming Mini PC',
   'intel-nuc-13-extreme',
@@ -215,7 +215,7 @@ VALUES (
   1485000, 1650000, 1485000, 'instock', 6, 42, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Minisforum Neptune HX100G Mini Gaming PC',
   'minisforum-neptune-hx100g',
@@ -225,7 +225,7 @@ VALUES (
   1185000, 1320000, 1185000, 'instock', 10, 38, 4.70, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS ROG NUC Extreme Gaming Desktop',
   'asus-rog-nuc-extreme',
@@ -239,7 +239,7 @@ VALUES (
 -- CATEGORY 3: PROCESSORS & MOTHERBOARDS (10 products)
 -- ══════════════════════════════════════════════════════════════
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Intel Core i9-14900K Processor',
   'intel-core-i9-14900k',
@@ -249,7 +249,7 @@ VALUES (
   485000, 540000, 485000, 'instock', 18, 68, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'AMD Ryzen 9 7950X3D Processor',
   'amd-ryzen-9-7950x3d',
@@ -259,7 +259,7 @@ VALUES (
   520000, 580000, 520000, 'instock', 12, 58, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Intel Core i7-14700K Processor',
   'intel-core-i7-14700k',
@@ -269,7 +269,7 @@ VALUES (
   385000, 430000, 385000, 'instock', 30, 85, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'AMD Ryzen 7 7800X3D Processor',
   'amd-ryzen-7-7800x3d',
@@ -279,7 +279,7 @@ VALUES (
   385000, 430000, 385000, 'instock', 25, 95, 4.95, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Intel Core i5-14600K Processor',
   'intel-core-i5-14600k',
@@ -289,7 +289,7 @@ VALUES (
   268000, 300000, 268000, 'instock', 45, 102, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS ROG Maximus Z790 Hero Motherboard',
   'asus-rog-maximus-z790-hero',
@@ -299,7 +299,7 @@ VALUES (
   485000, 540000, 485000, 'instock', 12, 52, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'MSI MPG B760 Gaming Edge WiFi',
   'msi-mpg-b760-gaming-edge-wifi',
@@ -309,7 +309,7 @@ VALUES (
   185000, 210000, 185000, 'instock', 28, 72, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS ROG Strix X670E-E Gaming WiFi',
   'asus-rog-strix-x670e-e',
@@ -319,7 +319,7 @@ VALUES (
   520000, 580000, 520000, 'instock', 10, 48, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Gigabyte B650 AORUS Elite AX V2',
   'gigabyte-b650-aorus-elite-ax-v2',
@@ -329,7 +329,7 @@ VALUES (
   168000, 188000, 168000, 'instock', 35, 88, 4.70, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASRock Z790 PG Lightning Motherboard',
   'asrock-z790-pg-lightning',
@@ -343,7 +343,7 @@ VALUES (
 -- CATEGORY 4: GRAPHICS CARDS & MEMORY (11 products)
 -- ══════════════════════════════════════════════════════════════
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS ROG Strix GeForce RTX 4090 OC',
   'asus-rog-strix-rtx-4090-oc',
@@ -353,7 +353,7 @@ VALUES (
   2150000, 2350000, 2150000, 'instock', 4, 38, 4.95, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'MSI GeForce RTX 4080 SUPER Gaming X Trio',
   'msi-rtx-4080-super-gaming-x-trio',
@@ -363,7 +363,7 @@ VALUES (
   1250000, 1380000, 1250000, 'instock', 8, 48, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Gigabyte GeForce RTX 4070 Ti SUPER Eagle OC',
   'gigabyte-rtx-4070-ti-super-eagle',
@@ -373,7 +373,7 @@ VALUES (
   920000, 1020000, 920000, 'instock', 12, 58, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'AMD Radeon RX 7900 XTX 24GB (Sapphire Nitro+)',
   'amd-rx-7900-xtx-sapphire-nitro',
@@ -383,7 +383,7 @@ VALUES (
   950000, 1050000, 950000, 'instock', 10, 52, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS Dual GeForce RTX 4070 OC Edition',
   'asus-dual-rtx-4070-oc',
@@ -393,7 +393,7 @@ VALUES (
   620000, 690000, 620000, 'instock', 18, 72, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'G.Skill Trident Z5 RGB 64GB DDR5-6400 CL32',
   'gskill-trident-z5-64gb-6400',
@@ -403,7 +403,7 @@ VALUES (
   338000, 380000, 338000, 'instock', 20, 48, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Corsair Vengeance 32GB DDR5-6000 CL30',
   'corsair-vengeance-32gb-6000',
@@ -413,7 +413,7 @@ VALUES (
   148000, 168000, 148000, 'instock', 50, 88, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Kingston FURY Beast 32GB DDR5-5600 CL36',
   'kingston-fury-beast-32gb-5600',
@@ -423,7 +423,7 @@ VALUES (
   118000, 135000, 118000, 'instock', 65, 102, 4.65, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Noctua NH-D15 chromax.black CPU Cooler',
   'noctua-nh-d15-chromax-black',
@@ -433,7 +433,7 @@ VALUES (
   128000, 145000, 128000, 'instock', 25, 78, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Corsair iCUE H150i Elite Capellix XT AIO',
   'corsair-icue-h150i-elite-capellix-xt',
@@ -443,7 +443,7 @@ VALUES (
   248000, 280000, 248000, 'instock', 20, 62, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Arctic Liquid Freezer III 280mm AIO',
   'arctic-liquid-freezer-iii-280',
@@ -457,7 +457,7 @@ VALUES (
 -- CATEGORY 5: STORAGE & DRIVES (10 products)
 -- ══════════════════════════════════════════════════════════════
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Samsung 990 PRO 2TB NVMe PCIe 4.0 SSD',
   'samsung-990-pro-2tb',
@@ -467,7 +467,7 @@ VALUES (
   218000, 245000, 218000, 'instock', 35, 78, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'WD Black SN850X 2TB NVMe PCIe 4.0 SSD',
   'wd-black-sn850x-2tb',
@@ -477,7 +477,7 @@ VALUES (
   198000, 220000, 198000, 'instock', 40, 85, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Crucial T700 2TB PCIe 5.0 NVMe SSD',
   'crucial-t700-2tb',
@@ -487,7 +487,7 @@ VALUES (
   385000, 430000, 385000, 'instock', 15, 42, 4.95, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Kingston KC3000 1TB PCIe 4.0 NVMe SSD',
   'kingston-kc3000-1tb',
@@ -497,7 +497,7 @@ VALUES (
   98000, 115000, 98000, 'instock', 55, 102, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Crucial P3 Plus 4TB PCIe 4.0 NVMe SSD',
   'crucial-p3-plus-4tb',
@@ -507,7 +507,7 @@ VALUES (
   298000, 335000, 298000, 'instock', 30, 68, 4.70, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Samsung 870 EVO 2TB 2.5" SATA SSD',
   'samsung-870-evo-2tb',
@@ -517,7 +517,7 @@ VALUES (
   168000, 188000, 168000, 'instock', 45, 95, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Samsung T7 Shield 2TB Portable SSD',
   'samsung-t7-shield-2tb',
@@ -527,7 +527,7 @@ VALUES (
   198000, 220000, 198000, 'instock', 35, 72, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'SanDisk Extreme PRO Portable SSD 4TB',
   'sandisk-extreme-pro-portable-4tb',
@@ -537,7 +537,7 @@ VALUES (
   485000, 540000, 485000, 'instock', 20, 58, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Seagate IronWolf Pro 12TB NAS HDD',
   'seagate-ironwolf-pro-12tb',
@@ -547,7 +547,7 @@ VALUES (
   420000, 470000, 420000, 'instock', 18, 52, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'WD Red Plus 8TB NAS HDD',
   'wd-red-plus-8tb',
@@ -561,7 +561,7 @@ VALUES (
 -- CATEGORY 6: MONITORS & DISPLAYS (8 products)
 -- ══════════════════════════════════════════════════════════════
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS ROG Swift PG27AQDM 27" OLED Gaming Monitor',
   'asus-rog-swift-pg27aqdm-oled',
@@ -571,7 +571,7 @@ VALUES (
   1050000, 1150000, 1050000, 'instock', 8, 48, 4.95, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Samsung Odyssey OLED G8 34" Curved Gaming',
   'samsung-odyssey-oled-g8-34',
@@ -581,7 +581,7 @@ VALUES (
   1250000, 1380000, 1250000, 'instock', 6, 42, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'LG 27GR95QE-B 27" OLED Gaming Monitor',
   'lg-27gr95qe-b-oled',
@@ -591,7 +591,7 @@ VALUES (
   920000, 1020000, 920000, 'instock', 10, 52, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Dell UltraSharp U2723DE 27" QHD Monitor',
   'dell-ultrasharp-u2723de',
@@ -601,7 +601,7 @@ VALUES (
   450000, 500000, 450000, 'instock', 20, 68, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'LG 32UN880-B 32" 4K Ergo Monitor',
   'lg-32un880-b-ergo',
@@ -611,7 +611,7 @@ VALUES (
   520000, 580000, 520000, 'instock', 15, 58, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'BenQ SW271C 27" 4K Photographer Monitor',
   'benq-sw271c',
@@ -621,7 +621,7 @@ VALUES (
   585000, 650000, 585000, 'instock', 12, 48, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'MSI MAG342CQR 34" Curved Gaming Monitor',
   'msi-mag342cqr',
@@ -631,7 +631,7 @@ VALUES (
   420000, 470000, 420000, 'instock', 18, 72, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'AOC CU34G2X 34" Curved Gaming Monitor',
   'aoc-cu34g2x',
@@ -645,7 +645,7 @@ VALUES (
 -- CATEGORY 7: KEYBOARDS & MICE (8 products)
 -- ══════════════════════════════════════════════════════════════
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Wooting 60HE+ Hall Effect Gaming Keyboard',
   'wooting-60he-plus',
@@ -655,7 +655,7 @@ VALUES (
   198000, 220000, 198000, 'instock', 15, 68, 4.95, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Keychron Q1 Pro 75% Mechanical Keyboard',
   'keychron-q1-pro',
@@ -665,7 +665,7 @@ VALUES (
   188000, 210000, 188000, 'instock', 20, 78, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Razer Huntsman V3 Pro Full-Size Gaming Keyboard',
   'razer-huntsman-v3-pro',
@@ -675,7 +675,7 @@ VALUES (
   248000, 280000, 248000, 'instock', 18, 58, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Logitech MX Keys S Wireless Keyboard',
   'logitech-mx-keys-s',
@@ -685,7 +685,7 @@ VALUES (
   148000, 168000, 148000, 'instock', 35, 95, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Logitech G Pro X Superlight 2 Wireless Mouse',
   'logitech-g-pro-x-superlight-2',
@@ -695,7 +695,7 @@ VALUES (
   168000, 188000, 168000, 'instock', 28, 88, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Razer Viper V3 Pro Wireless Gaming Mouse',
   'razer-viper-v3-pro',
@@ -705,7 +705,7 @@ VALUES (
   158000, 175000, 158000, 'instock', 25, 78, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Logitech MX Master 3S Wireless Mouse',
   'logitech-mx-master-3s',
@@ -715,7 +715,7 @@ VALUES (
   118000, 135000, 118000, 'instock', 40, 102, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'SteelSeries Rival 3 Wireless Gaming Mouse',
   'steelseries-rival-3-wireless',
@@ -729,7 +729,7 @@ VALUES (
 -- CATEGORY 8: NETWORKING & ACCESSORIES (7 products)
 -- ══════════════════════════════════════════════════════════════
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'ASUS RT-BE96U WiFi 7 Router',
   'asus-rt-be96u-wifi7',
@@ -739,7 +739,7 @@ VALUES (
   685000, 760000, 685000, 'instock', 8, 42, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Netgear RAXE500 Nighthawk WiFi 6E Router',
   'netgear-raxe500-wifi6e',
@@ -749,7 +749,7 @@ VALUES (
   520000, 580000, 520000, 'instock', 12, 52, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'TP-Link Archer AXE75 WiFi 6E Router',
   'tp-link-archer-axe75',
@@ -759,7 +759,7 @@ VALUES (
   168000, 188000, 168000, 'instock', 25, 78, 4.75, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'Ubiquiti UniFi Dream Machine Special Edition',
   'ubiquiti-udm-se',
@@ -769,7 +769,7 @@ VALUES (
   520000, 580000, 520000, 'instock', 10, 48, 4.85, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'TP-Link Deco XE75 Pro WiFi 6E Mesh (3-Pack)',
   'tp-link-deco-xe75-pro-3pack',
@@ -779,7 +779,7 @@ VALUES (
   385000, 430000, 385000, 'instock', 15, 62, 4.80, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'SteelSeries Arctis Nova Pro Wireless Gaming Headset',
   'steelseries-arctis-nova-pro-wireless',
@@ -789,7 +789,7 @@ VALUES (
   368000, 410000, 368000, 'instock', 18, 68, 4.90, 'publish'
 ) ON CONFLICT (slug) DO NOTHING;
 
-INSERT INTO warespire_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
+INSERT INTO insightstack_products (name, slug, sku, description, short_description, price, regular_price, sale_price, stock_status, stock_quantity, rating_count, average_rating, status)
 VALUES (
   'HyperX Cloud Alpha Wireless Gaming Headset',
   'hyperx-cloud-alpha-wireless',
@@ -802,77 +802,77 @@ VALUES (
 -- ── Product Images ────────────────────────────────────────────
 
 -- Laptops (sample - add all 75)
-INSERT INTO warespire_product_images (product_id, src, name, alt, position)
+INSERT INTO insightstack_product_images (product_id, src, name, alt, position)
 SELECT p.id, 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=600', 'ASUS ROG Zephyrus', 'ASUS ROG Zephyrus G16', 0
-FROM warespire_products p WHERE p.slug = 'asus-rog-zephyrus-g16' ON CONFLICT DO NOTHING;
+FROM insightstack_products p WHERE p.slug = 'asus-rog-zephyrus-g16' ON CONFLICT DO NOTHING;
 
-INSERT INTO warespire_product_images (product_id, src, name, alt, position)
+INSERT INTO insightstack_product_images (product_id, src, name, alt, position)
 SELECT p.id, 'https://images.unsplash.com/photo-1625336960423-228c02f71e4f?w=600', 'MSI Titan', 'MSI Titan 18 HX', 0
-FROM warespire_products p WHERE p.slug = 'msi-titan-18-hx' ON CONFLICT DO NOTHING;
+FROM insightstack_products p WHERE p.slug = 'msi-titan-18-hx' ON CONFLICT DO NOTHING;
 
 -- Continue pattern for remaining products...
 
 -- ── Product ↔ Category Links ──────────────────────────────────
 
 -- Laptops & Notebooks
-INSERT INTO warespire_product_categories (product_id, category_id)
-SELECT p.id, c.id FROM warespire_products p, warespire_categories c
+INSERT INTO insightstack_product_categories (product_id, category_id)
+SELECT p.id, c.id FROM insightstack_products p, insightstack_categories c
 WHERE p.slug IN ('asus-rog-zephyrus-g16','msi-titan-18-hx','lenovo-legion-pro-7i-gen9','razer-blade-16','dell-xps-15-9530','hp-omen-16','lenovo-thinkpad-p16s-gen2','asus-vivobook-pro-16x-oled','acer-swift-x-14','macbook-pro-16-m3-max','microsoft-surface-laptop-5-15','lg-gram-17')
 AND c.slug = 'laptops-notebooks'
 ON CONFLICT DO NOTHING;
 
 -- Desktop Computers
-INSERT INTO warespire_product_categories (product_id, category_id)
-SELECT p.id, c.id FROM warespire_products p, warespire_categories c
+INSERT INTO insightstack_product_categories (product_id, category_id)
+SELECT p.id, c.id FROM insightstack_products p, insightstack_categories c
 WHERE p.slug IN ('alienware-aurora-r16','nzxt-player-three-prime','cyberpower-gamer-supreme','hp-z2-tower-g9','dell-optiplex-7010-tower','apple-mac-studio-m2-ultra','intel-nuc-13-extreme','minisforum-neptune-hx100g','asus-rog-nuc-extreme')
 AND c.slug = 'desktop-computers'
 ON CONFLICT DO NOTHING;
 
 -- Processors & Motherboards
-INSERT INTO warespire_product_categories (product_id, category_id)
-SELECT p.id, c.id FROM warespire_products p, warespire_categories c
+INSERT INTO insightstack_product_categories (product_id, category_id)
+SELECT p.id, c.id FROM insightstack_products p, insightstack_categories c
 WHERE p.slug IN ('intel-core-i9-14900k','amd-ryzen-9-7950x3d','intel-core-i7-14700k','amd-ryzen-7-7800x3d','intel-core-i5-14600k','asus-rog-maximus-z790-hero','msi-mpg-b760-gaming-edge-wifi','asus-rog-strix-x670e-e','gigabyte-b650-aorus-elite-ax-v2','asrock-z790-pg-lightning')
 AND c.slug = 'processors-motherboards'
 ON CONFLICT DO NOTHING;
 
 -- Graphics Cards & Memory
-INSERT INTO warespire_product_categories (product_id, category_id)
-SELECT p.id, c.id FROM warespire_products p, warespire_categories c
+INSERT INTO insightstack_product_categories (product_id, category_id)
+SELECT p.id, c.id FROM insightstack_products p, insightstack_categories c
 WHERE p.slug IN ('asus-rog-strix-rtx-4090-oc','msi-rtx-4080-super-gaming-x-trio','gigabyte-rtx-4070-ti-super-eagle','amd-rx-7900-xtx-sapphire-nitro','asus-dual-rtx-4070-oc','gskill-trident-z5-64gb-6400','corsair-vengeance-32gb-6000','kingston-fury-beast-32gb-5600','noctua-nh-d15-chromax-black','corsair-icue-h150i-elite-capellix-xt','arctic-liquid-freezer-iii-280')
 AND c.slug = 'graphics-cards-memory'
 ON CONFLICT DO NOTHING;
 
 -- Storage & Drives
-INSERT INTO warespire_product_categories (product_id, category_id)
-SELECT p.id, c.id FROM warespire_products p, warespire_categories c
+INSERT INTO insightstack_product_categories (product_id, category_id)
+SELECT p.id, c.id FROM insightstack_products p, insightstack_categories c
 WHERE p.slug IN ('samsung-990-pro-2tb','wd-black-sn850x-2tb','crucial-t700-2tb','kingston-kc3000-1tb','crucial-p3-plus-4tb','samsung-870-evo-2tb','samsung-t7-shield-2tb','sandisk-extreme-pro-portable-4tb','seagate-ironwolf-pro-12tb','wd-red-plus-8tb')
 AND c.slug = 'storage-drives'
 ON CONFLICT DO NOTHING;
 
 -- Monitors & Displays
-INSERT INTO warespire_product_categories (product_id, category_id)
-SELECT p.id, c.id FROM warespire_products p, warespire_categories c
+INSERT INTO insightstack_product_categories (product_id, category_id)
+SELECT p.id, c.id FROM insightstack_products p, insightstack_categories c
 WHERE p.slug IN ('asus-rog-swift-pg27aqdm-oled','samsung-odyssey-oled-g8-34','lg-27gr95qe-b-oled','dell-ultrasharp-u2723de','lg-32un880-b-ergo','benq-sw271c','msi-mag342cqr','aoc-cu34g2x')
 AND c.slug = 'monitors-displays'
 ON CONFLICT DO NOTHING;
 
 -- Keyboards & Mice
-INSERT INTO warespire_product_categories (product_id, category_id)
-SELECT p.id, c.id FROM warespire_products p, warespire_categories c
+INSERT INTO insightstack_product_categories (product_id, category_id)
+SELECT p.id, c.id FROM insightstack_products p, insightstack_categories c
 WHERE p.slug IN ('wooting-60he-plus','keychron-q1-pro','razer-huntsman-v3-pro','logitech-mx-keys-s','logitech-g-pro-x-superlight-2','razer-viper-v3-pro','logitech-mx-master-3s','steelseries-rival-3-wireless')
 AND c.slug = 'keyboards-mice'
 ON CONFLICT DO NOTHING;
 
 -- Networking & Accessories
-INSERT INTO warespire_product_categories (product_id, category_id)
-SELECT p.id, c.id FROM warespire_products p, warespire_categories c
+INSERT INTO insightstack_product_categories (product_id, category_id)
+SELECT p.id, c.id FROM insightstack_products p, insightstack_categories c
 WHERE p.slug IN ('asus-rt-be96u-wifi7','netgear-raxe500-wifi6e','tp-link-archer-axe75','ubiquiti-udm-se','tp-link-deco-xe75-pro-3pack','steelseries-arctis-nova-pro-wireless','hyperx-cloud-alpha-wireless')
 AND c.slug = 'networking-accessories'
 ON CONFLICT DO NOTHING;
 
 -- ── Update category product counts ───────────────────────────
 
-UPDATE warespire_categories c
+UPDATE insightstack_categories c
 SET count = (
-  SELECT COUNT(*) FROM warespire_product_categories pc WHERE pc.category_id = c.id
+  SELECT COUNT(*) FROM insightstack_product_categories pc WHERE pc.category_id = c.id
 );

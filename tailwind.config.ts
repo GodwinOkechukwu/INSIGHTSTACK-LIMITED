@@ -24,7 +24,7 @@ const config: Config = {
         transparent: "transparent",
         current: "currentColor",
 
-        /* ========== Warespire Brand Foundation ========== */
+        /* ========== insightstack Brand Foundation ========== */
         // The deep navy blue seen in the "Maintenance" banner
         brand: {
           navy: "#002D5B",
