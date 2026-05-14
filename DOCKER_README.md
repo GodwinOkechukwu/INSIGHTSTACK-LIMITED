@@ -1,6 +1,6 @@
 # Docker Setup Guide
 
-This guide explains how to build and run the warespire Digital Innovations application using Docker.
+This guide explains how to build and run the insightstack Digital Innovations application using Docker.
 
 ## Prerequisites
 
@@ -36,13 +36,13 @@ JWT_SECRET=your_long_random_jwt_secret_string_min_32_chars
 ### 2. Build the Docker Image
 
 ```bash
-docker build -t warespire:latest .
+docker build -t insightstack:latest .
 ```
 
 Or with a specific version tag:
 
 ```bash
-docker build -t warespire:1.0.0 .
+docker build -t insightstack:1.0.0 .
 ```
 
 ### 3. Run with Docker Compose (Recommended)
@@ -73,13 +73,13 @@ If you already have PostgreSQL running externally, you can run just the app:
 
 ```bash
 docker run -d \
-  --name warespire_app \
+  --name insightstack_app \
   -p 4019:4019 \
   --env-file .env.local \
-  warespire:latest
+  insightstack:latest
 ```
 
-Replace `warespire:latest` with your image name/tag.
+Replace `insightstack:latest` with your image name/tag.
 
 ## Environment Variables
 
@@ -99,7 +99,7 @@ All required environment variables are listed in [.env.docker.example](.env.dock
 | `S3_SECRET_KEY`        | AWS secret key                       | Yes      | -                       |
 | `S3_BUCKET_NAME`       | S3 bucket name                       | Yes      | -                       |
 | `JWT_SECRET`           | JWT signing secret                   | Yes      | -                       |
-| `TABLE_PREFIX`         | Database table prefix                | No       | `warespire_`            |
+| `TABLE_PREFIX`         | Database table prefix                | No       | `insightstack_`            |
 | `NODE_ENV`             | Environment (development/production) | No       | `production`            |
 | `PORT`                 | Application port (in container)      | No       | `4019`                  |
 
@@ -128,7 +128,7 @@ docker-compose up -d
 
 ```bash
 # Connect to the PostgreSQL container
-docker exec -it warespire_postgres psql -U postgres -d store_db
+docker exec -it insightstack_postgres psql -U postgres -d store_db
 
 # Run schema SQL
 \i /docker-entrypoint-initdb.d/01-schema.sql
@@ -169,7 +169,7 @@ To use a different host port, either:
 
 2. Or with `docker run`:
    ```bash
-   docker run -p 8000:4019 warespire:latest
+   docker run -p 8000:4019 insightstack:latest
    ```
 
 ## Production Deployment
@@ -231,7 +231,7 @@ Common issues:
 Verify database schema exists:
 
 ```bash
-docker exec warespire_postgres psql -U postgres -d store_db -c "\dt"
+docker exec insightstack_postgres psql -U postgres -d store_db -c "\dt"
 ```
 
 ### S3 upload failures
@@ -262,7 +262,7 @@ docker-compose down -v
 Remove image:
 
 ```bash
-docker rmi warespire:latest
+docker rmi insightstack:latest
 ```
 
 ## Additional Resources

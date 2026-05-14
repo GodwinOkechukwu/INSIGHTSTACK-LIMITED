@@ -54,7 +54,7 @@ export const splitText = (text: string) => {
 	return text.split(/(?=[A-Z])/).join(" ");
 };
 
-export const CompanyName = "warespire innovations limited";
+export const CompanyName = "insightstack innovations";
 
 export const statusStyles: { [key: string]: string } = {
 	completed: "text-emerald-500",

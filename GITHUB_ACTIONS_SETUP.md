@@ -1,6 +1,6 @@
 # GitHub Actions Deployment Setup Guide
 
-This guide explains how to set up the GitHub Actions workflows for automated deployment of the warespire Digital Innovations application.
+This guide explains how to set up the GitHub Actions workflows for automated deployment of the insightstack limited  application.
 
 ## Overview
 
@@ -165,7 +165,7 @@ S3_BUCKET_NAME=your-staging-bucket
 JWT_SECRET=your_staging_jwt_secret_min_32_chars
 
 # Other
-TABLE_PREFIX=warespire_
+TABLE_PREFIX=insightstack_
 NEXT_PUBLIC_CHECKOUT_API=https://checkout-api-service-dev.eks-alliancepay.com
 NEXT_PUBLIC_CHECKOUT_PUBLIC_KEY_API=your_key
 NEXT_PUBLIC_ENCRYPTION_KEY=your_key
@@ -196,7 +196,7 @@ S3_BUCKET_NAME=your-production-bucket
 JWT_SECRET=your_production_jwt_secret_min_32_chars
 
 # Other
-TABLE_PREFIX=warespire_
+TABLE_PREFIX=insightstack_
 NEXT_PUBLIC_CHECKOUT_API=https://checkout-api-service.eks-alliancepay.com
 NEXT_PUBLIC_CHECKOUT_PUBLIC_KEY_API=your_key
 NEXT_PUBLIC_ENCRYPTION_KEY=your_key
@@ -234,10 +234,10 @@ View container logs on server:
 
 ```bash
 # Staging
-docker logs -f warespire-staging
+docker logs -f insightstack-staging
 
 # Production
-docker logs -f warespire-production
+docker logs -f insightstack-production
 ```
 
 ## Workflow Details
@@ -245,8 +245,8 @@ docker logs -f warespire-production
 ### Staging Workflow (`deploy_staging.yml`)
 
 - Triggers on: Push to `dev` branch
-- Docker image tag: `slemfowel1/warespire-digital-innovations:staging`
-- Container name: `warespire-staging`
+- Docker image tag: `slemfowel1/insightstack-digital-innovations:staging`
+- Container name: `insightstack-staging`
 - Port: `4019`
 - Env file: `/home/apps/.env.staging`
 - Health check: 30 attempts (1 minute timeout)
@@ -255,7 +255,7 @@ docker logs -f warespire-production
 
 - Triggers on: Push to `main` branch
 - Docker image tags: `latest` and version tag (git tag)
-- Container name: `warespire-production`
+- Container name: `insightstack-production`
 - Port: `4019`
 - Env file: `/home/apps/.env.production`
 - Auto-restart: `unless-stopped`
@@ -291,7 +291,7 @@ sudo ./svc.sh start
 **Check**: View logs
 
 ```bash
-docker logs warespire-staging
+docker logs insightstack-staging
 ```
 
 **Common issues**:
@@ -332,14 +332,14 @@ If you need to run database migrations:
 
 ```bash
 # Add to your pre-deployment script
-docker exec warespire-production npm run migrate
+docker exec insightstack-production npm run migrate
 ```
 
 Or add to workflow before health check:
 
 ```yaml
 - name: Run Database Migrations
-  run: docker exec warespire-production npm run db:migrate
+  run: docker exec insightstack-production npm run db:migrate
 ```
 
 ## Rollback
@@ -348,12 +348,12 @@ To rollback to a previous version:
 
 ```bash
 # On server
-docker stop warespire-production
-docker rm warespire-production
-docker pull slemfowel1/warespire-digital-innovations:previous_tag
-docker run -d -p 4019:4019 --name warespire-production \
+docker stop insightstack-production
+docker rm insightstack-production
+docker pull slemfowel1/insightstack-digital-innovations:previous_tag
+docker run -d -p 4019:4019 --name insightstack-production \
   --env-file /home/apps/.env.production \
-  slemfowel1/warespire-digital-innovations:previous_tag
+  slemfowel1/insightstack-digital-innovations:previous_tag
 ```
 
 ## Additional Resources
