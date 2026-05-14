@@ -18,6 +18,7 @@ import FormToast from "../Reusables/Toast/SigninToast";
 import { ClipLoader } from "react-spinners";
 import { jwtDecode } from "jwt-decode";
 import { isTokenValid } from "../Reusables";
+import { SITE_NAME, SITE_EMAIL } from "@constants/seoContants";
 
 const CostCalculationSection = () => {
   const { token } = useToken();
@@ -306,7 +307,7 @@ const CostCalculationSection = () => {
                   >
                     terms & conditions
                   </span>{" "}
-                  of Warespire Innovations
+                  of {SITE_NAME}
                 </span>
               </label>
             </div>

@@ -6,6 +6,7 @@ import React from "react";
 import { FiPhoneCall, FiClock, FiMessageSquare } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { RxEnvelopeClosed } from "react-icons/rx";
+import { SITE_EMAIL } from "@constants/seoContants";
 
 /* ─────────────────────────────────────────────
    Card skeleton
@@ -35,7 +36,7 @@ const ContactCards = () => {
       title: "Email Us",
       type: "email",
       icon: <RxEnvelopeClosed />,
-      additionalText: "support@warespire.com",
+      additionalText: SITE_EMAIL,
       // additionalText: GeneralSettings ? GeneralSettings[0]?.value : "N/A",
     },
     {
@@ -43,7 +44,7 @@ const ContactCards = () => {
       title: "Call Us",
       type: "tel",
       icon: <FiPhoneCall />,
-      additionalText: "08034802011",
+      additionalText: "08140875523",
       // additionalText: GeneralSettings ? GeneralSettings[1]?.value : "N/A",
     },
     {
@@ -51,7 +52,7 @@ const ContactCards = () => {
       title: "Our Location",
       type: "text",
       icon: <IoLocationOutline />,
-      description: "28, Adekunle Fajuyi Way, Ikeja GRA, Lagos",
+      description: "21, Ilupeju Road, Ilupeju Lagos state",
       // description: GeneralSettings ? GeneralSettings[2]?.value : "N/A",
     },
     {
@@ -150,8 +151,7 @@ const ContactCards = () => {
               Send a Message
             </p>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
-              Send an email to support@warespire.com. We'll get back to you
-              shortly
+              Send an email to {SITE_EMAIL}. We'll get back to you shortly
             </h2>
           </div>
 

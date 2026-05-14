@@ -1,5 +1,6 @@
 import AppLayout from "@src/components/AppLayout";
 import Picture from "@src/components/picture/Picture";
+import { SITE_NAME } from "@constants/seoContants";
 
 const page = () => {
   return (
@@ -14,10 +15,10 @@ const page = () => {
         <div className="grid slg:grid-cols-2 mt-2 sm:mt-5 slg:mt-10 px-4 slg:px-16 overflow-hidden">
           <div className="flex flex-col gap-2">
             <h3 className="slg:text-2xl text-lg font-semibold text-center slg:text-start">
-              Welcome to our Warespire Innovations!
+              Welcome to our {SITE_NAME}!
             </h3>
             <p className="text-xs sm:text-sm slg:text-base !leading-[180%] text-black">
-              Warespire Innovations! is a distributor in Nigeria. We offer a
+              {SITE_NAME}! is a distributor in Nigeria. We offer a
               wide range of high-quality appliances designed to meet the diverse
               needs of our customers. Our products include; <br /> Kitchen
               Appliances, Laundry Appliances, office Equipment, Home Comforts
