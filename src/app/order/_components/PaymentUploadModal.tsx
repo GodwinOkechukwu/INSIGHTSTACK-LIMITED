@@ -154,7 +154,7 @@ const PaymentUploadModal = ({
                 {/* DYNAMIC BANK CARD SECTION */}
                 <div className="bg-slate-900 rounded-[1.2rem] p-6 text-white mb-8 shadow-xl shadow-slate-200 relative overflow-hidden">
                   <div className="absolute top-0 right-0 p-4 opacity-10 font-black text-4xl uppercase tracking-tighter">
-                    Warespire
+                    Insight
                   </div>
 
                   <div className="relative z-10 space-y-5">

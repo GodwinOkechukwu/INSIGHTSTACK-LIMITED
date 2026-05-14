@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import * as Icons1 from "react-icons/sl";
+import { SITE_NAME, SITE_EMAIL } from "@constants/seoContants";
 
 interface FaqAccordionItemProps {
   id?: number;
@@ -55,7 +56,7 @@ const FaqAccordionItem: React.FC<FaqAccordionItemProps> = ({
 const faqItems: FaqAccordionItemProps[] = [
   {
     id: 1,
-    title: "How does the Warespire Innovations importation process work?",
+    title: `How does the ${SITE_NAME} importation process work?`,
     description:
       "We operate a seamless two-phase system: First, you pay for the cost of the goods to initiate procurement in China/Overseas. Once your cargo arrives in Nigeria, a second invoice is generated for shipping and customs clearing fees.",
   },
@@ -82,7 +83,7 @@ const faqItems: FaqAccordionItemProps[] = [
     id: 5,
     title: "How do I verify my manual bank transfer?",
     description:
-      "After making a transfer to the Warespire Innovations corporate account, simply upload your transaction receipt and Session ID/Reference via the 'Verify Payment' button on your order page for instant admin reconciliation.",
+      `After making a transfer to the ${SITE_NAME} corporate account, simply upload your transaction receipt and Session ID/Reference via the 'Verify Payment' button on your order page for instant admin reconciliation.`,
   },
 
   {
@@ -95,13 +96,13 @@ const faqItems: FaqAccordionItemProps[] = [
     id: 7,
     title: "Are my imports covered by a warranty?",
     description:
-      "Yes. All electronic and mechanical products procured through Warespire Innovations carry a standard manufacturer’s warranty, which we help you facilitate in the event of a technical issue.",
+      `Yes. All electronic and mechanical products procured through ${SITE_NAME} carry a standard manufacturer’s warranty, which we help you facilitate in the event of a technical issue.`,
   },
   {
     id: 8,
     title: "Is there a benefit to paying off my balance early?",
     description:
-      "Yes, Warespire Innovations rewards financial discipline. Customers who complete their payments ahead of schedule may be eligible for discounts on future shipping fees or interest-free credit extensions.",
+      `Yes, ${SITE_NAME} rewards financial discipline. Customers who complete their payments ahead of schedule may be eligible for discounts on future shipping fees or interest-free credit extensions.`,
   },
   {
     id: 9,
@@ -110,7 +111,7 @@ const faqItems: FaqAccordionItemProps[] = [
       "Our support team is available 24/7. You can use the 'Support Hub' link on your invoice or contact your designated account officer directly for real-time updates on customs or weather-related delays.",
   },
 ];
-
+ 
 const FaqAccordion: React.FC = () => {
   return (
     <section className="min-h-screen px-2 xs:px-8 sm:px-16 md:px-32 pt-6 sm:pt-8 pb-6 sm:pb-8 xl:pb-0 xl:pt-10 overflow-hidden">
