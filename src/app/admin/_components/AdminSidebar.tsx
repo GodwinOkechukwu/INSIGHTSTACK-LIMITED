@@ -21,7 +21,7 @@ export default function AdminSidebar({ onClose }: { onClose?: () => void }) {
   return (
     <aside className="flex flex-col h-full bg-[#002D5B] text-white w-64">
       <div className="px-6 py-5 border-b border-white/10">
-        <h1 className="text-xl font-bold tracking-wide">Insight Admin</h1>
+        <h1 className="text-xl font-bold tracking-wide">insightstack Admin</h1>
         <p className="text-xs text-white/50 mt-0.5">Management Panel</p>
       </div>
 
@@ -48,7 +48,7 @@ export default function AdminSidebar({ onClose }: { onClose?: () => void }) {
       </nav>
 
       <div className="px-6 py-4 border-t border-white/10 text-xs text-white/40">
-        Insight Technologies
+        insightstack Technologies
       </div>
     </aside>
   );
